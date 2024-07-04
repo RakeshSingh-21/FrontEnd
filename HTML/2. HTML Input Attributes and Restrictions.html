@@ -1,0 +1,274 @@
+1: Design the web page using all the below input attributes
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Attributes</title>
+</head>
+<body>
+  <form>
+    <label for="text">Text:</label>
+    <input type="text" id="text" name="text"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <label for="submit">Submit:</label>
+    <input type="submit" id="submit" name="submit"><br><br>
+    <label for="reset">Reset:</label>
+    <input type="reset" id="reset" name="reset"><br><br>
+    <label for="radio">Radio:</label>
+    <input type="radio" id="radio" name="radio"><br><br>
+    <label for="checkbox">Checkbox:</label>
+    <input type="checkbox" id="checkbox" name="checkbox"><br><br>
+    <label for="button">Button:</label>
+    <input type="button" id="button" name="button"><br><br>
+  </form>
+</body>
+</html>
+
+          
+        
+2: HTML5 input Types
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML5 Input Types</title>
+</head>
+<body>
+  <form>
+    <label for="number">Number:</label>
+    <input type="number" id="number" name="number"><br><br>
+    <label for="range">Range:</label>
+    <input type="range" id="range" name="range"><br><br>
+    <label for="color">Color:</label>
+    <input type="color" id="color" name="color"><br><br>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date"><br><br>
+    <label for="file">File:</label>
+    <input type="file" id="file" name="file"><br><br>
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time"><br><br>
+    <label for="month">Month:</label>
+    <input type="month" id="month" name="month"><br><br>
+    <label for="week">Week:</label>
+    <input type="week" id="week" name="week"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+  </form>
+</body>
+</html>
+
+3: Apply all of the below input restrictions
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Restrictions</title>
+</head>
+<body>
+  <form>
+    <label for="disabled">Disabled:</label>
+    <input type="text" id="disabled" name="disabled" disabled><br><br>
+    <label for="max">Max:</label>
+    <input type="number" id="max" name="max" max="10"><br><br>
+    <label for="maxlength">Maxlength:</label>
+    <input type="text" id="maxlength" name="maxlength" maxlength="10"><br><br>
+    <label for="min">Min:</label>
+    <input type="number" id="min" name="min" min="5"><br><br>
+    <label for="readonly">Readonly:</label>
+    <input type="text" id="readonly" name="readonly" readonly><br><br>
+    <label for="required">Required:</label>
+    <input type="text" id="required" name="required" required><br><br>
+    <label for="size">Size:</label>
+    <input type="text" id="size" name="size" size="20"><br><br>
+    <label for="value">Value:</label>
+    <input type="text" id="value" name="value" value="Default value"><br><br>
+  </form>
+</body>
+</html>
+
+4: Develop a web page using target attribute
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using the Target Attribute</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    a {
+      display: inline-block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #0066cc;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    form {
+      margin-top: 20px;
+    }
+    
+    input[type="text"],
+    input[type="submit"] {
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Demonstrating the Target Attribute</h1>
+
+    <!-- Links with different target attributes -->
+    <h2>Links with Target Attribute</h2>
+    <p><a href="https://www.example.com" target="_blank">Open Example.com in a new tab/window</a></p>
+    <p><a href="https://www.example.com" target="_self">Open Example.com in the same frame</a></p>
+    <p><a href="https://www.example.com" target="_parent">Open Example.com in the parent frame</a></p>
+    <p><a href="https://www.example.com" target="_top">Open Example.com in the full body of the window</a></p>
+
+    <!-- Forms with target attribute -->
+    <h2>Form with Target Attribute</h2>
+    <form action="https://www.example.com" method="GET" target="_blank">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <input type="submit" value="Submit">
+    </form>
+
+    <form action="https://www.example.com" method="GET" target="_self">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
+
+5. Use I-frames and Marquee in your webpage. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using Iframes, Marquees, and Target Attributes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #0066cc;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .iframe-container {
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 1px solid #ccc;
+    }
+
+    .marquee-container {
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    marquee {
+      color: #0066cc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Demonstrating Iframes, Marquees, and Target Attributes</h1>
+
+    <!-- Links with different target attributes -->
+    <h2>Links with Target Attribute</h2>
+    <p><a href="https://www.example.com" target="_blank">Open Example.com in a new tab/window</a></p>
+    <p><a href="https://www.example.com" target="_self">Open Example.com in the same frame</a></p>
+    <p><a href="https://www.example.com" target="_parent">Open Example.com in the parent frame</a></p>
+    <p><a href="https://www.example.com" target="_top">Open Example.com in the full body of the window</a></p>
+
+    <!-- Forms with target attribute -->
+    <h2>Form with Target Attribute</h2>
+    <form action="https://www.example.com" method="GET" target="_blank">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <input type="submit" value="Submit">
+    </form>
+
+    <form action="https://www.example.com" method="GET" target="_self">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+      <input type="submit" value="Submit">
+    </form>
+
+    <!-- Iframes -->
+    <h2>Iframe Example</h2>
+    <div class="iframe-container">
+      <iframe src="https://www.example.com" title="Example Iframe"></iframe>
+    </div>
+
+    <!-- Marquee -->
+    <h2>Marquee Example</h2>
+    <div class="marquee-container">
+      <marquee behavior="scroll" direction="left" scrollamount="5">This is a scrolling text using the marquee tag. Marquees can scroll text, images, or other content across the screen.</marquee>
+    </div>
+  </div>
+</body>
+</html>
+
