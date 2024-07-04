@@ -1,0 +1,128 @@
+1: Apply CSS shadow effects like for image box and hover a cursor
+
+.image-box {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s;
+}
+
+.image-box:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+2: Use CSS animations (name, duration, iteration-count & delay) and paginations (Hoverable, with and without spaces)
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li {
+  margin: 0 10px;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.pagination li a:hover {
+  color: #666;
+}
+
+.pagination li.active a {
+  color: #999;
+}
+
+/* Animation example */
+.animate {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+3: Add positions to CSS block (static, relative, fixed, absolute and sticky)
+
+.static {
+  position: static;
+  background-color: #f00;
+  width: 200px;
+  height: 200px;
+}
+
+.relative {
+  position: relative;
+  top: 20px;
+  left: 30px;
+  background-color: #0f0;
+  width: 200px;
+  height: 200px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #00f;
+  width: 200px;
+  height: 200px;
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff0;
+  width: 200px;
+  height: 200px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #f0f;
+  width: 200px;
+  height: 200px;
+}
+
+4: Handling Overflow using scroll
+
+.overflow {
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+
+.overflow:hover {
+  overflow: scroll;
+}
+
+5: Adding Opacity to a image
+
+.image {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.image:hover {
+  opacity: 1;
+}

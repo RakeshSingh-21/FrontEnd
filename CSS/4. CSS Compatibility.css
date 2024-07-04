@@ -1,0 +1,145 @@
+1: Create a table and apply table-layout as fixed and none
+
+<!-- Table with table-layout: fixed -->
+<table style="table-layout: fixed; width: 100%">
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+    <th>Column 3</th>
+  </tr>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+    <td>Cell 3</td>
+  </tr>
+</table>
+
+<!-- Table with table-layout: auto -->
+<table style="table-layout: auto; width: 100%">
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+    <th>Column 3</th>
+  </tr>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+    <td>Cell 3</td>
+  </tr>
+</table>
+
+2: Create a list and change its list-style-type
+
+<!-- Ordered list with decimal numbers -->
+<ol style="list-style-type: decimal">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+
+<!-- Unordered list with square bullets -->
+<ul style="list-style-type: square">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<!-- Ordered list with roman numerals -->
+<ol style="list-style-type: upper-roman">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+
+3: Create a grid with of different types
+
+/* Grid with grid-template-columns */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: #eee;
+  padding: 20px;
+}
+
+/* Grid with grid-template-rows */
+.grid-container-2 {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item-2 {
+  background-color: #eee;
+  padding: 20px;
+}
+
+/* Grid with grid-auto-flow */
+.grid-container-3 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+}
+
+.grid-item-3 {
+  background-color: #eee;
+  padding: 20px;
+}
+
+4: Create a hero image
+
+<!-- Hero image with CSS -->
+<div class="hero">
+  <img src="hero-image.jpg" alt="Hero Image">
+</div>
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+5: Write a program of view-port for grid, media queries, image and video
+
+/* Viewport units */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+ .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+ .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Image styling */
+.image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Video styling */
+.video {
+  width: 100%;
+  height: 300px;
+}

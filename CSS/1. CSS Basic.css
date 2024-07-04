@@ -1,0 +1,136 @@
+1: Add CSS comments in your CSS block
+
+/* This is a CSS comment */
+
+body {
+  /* This is another CSS comment */
+  background-color: #f2f2f2;
+}
+
+/* You can also use multi-line comments
+like this */
+
+2: Create a page with different background-color of a page and set an image as the background-image of a page
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Image</title>
+  <style>
+    body {
+      /* Set the background color */
+      background-color: #ccccff;
+      
+      /* Set the background image */
+      background-image: url('background.jpg');
+      
+      /* Set the background image to not scroll with the page */
+      background-attachment: fixed;
+      
+      /* Set the size of the background image */
+      background-size: 100% 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Page content here -->
+</body>
+</html>
+
+ 3: Create a different page with the width, style and color of the 4 border-style
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Borders</title>
+  <style>
+    .box {
+      /* Set the width of the box */
+      width: 300px;
+      
+      /* Set different borders on each side with different patterns */
+      border-top: 5px solid red;
+      border-right: 5px dotted blue;
+      border-bottom: 5px dashed green;
+      border-left: 5px double yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <!-- Box content here -->
+  </div>
+</body>
+</html>
+
+4: Develop a page and set the height:(in pixels and %) and width:(in pixels and %) on elements
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Height and Width</title>
+  <style>
+    .box1 {
+      /* Set the height and width in pixels */
+      height: 200px;
+      width: 300px;
+      background-color: #ff0000;
+    }
+    
+    .box2 {
+      /* Set the height and width in percentage */
+      height: 50%;
+      width: 75%;
+      background-color: #00ff00;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <!-- Box 1 content here -->
+  </div>
+  <div class="box2">
+    <!-- Box 2 content here -->
+  </div>
+</body>
+</html>
+
+5: Develop a page with different font-styles, font-size, font-family, colors and text-align
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fonts</title>
+  <style>
+    .font1 {
+      /* Set the font style, size, family, color, and text align */
+      font-style: italic;
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+      color: #0000ff;
+      text-align: left;
+    }
+    
+    .font2 {
+      font-style: oblique;
+      font-size: 18px;
+      font-family: Times New Roman, serif;
+      color: #008000;
+      text-align: center;
+    }
+    
+    .font3 {
+      font-style: normal;
+      font-size: 36px;
+      font-family: Courier, monospace;
+      color: #ff0000;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <p class="font1">This is font 1</p>
+  <p class="font2">This is font 2</p>
+  <p class="font3">This is font 3</p>
+</body>
+</html>

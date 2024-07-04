@@ -1,0 +1,151 @@
+1: A page which specify a black border for table and if hover on it, page should change it's colour
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Border</title>
+  <style>
+    table {
+      border: 1px solid black;
+    }
+    
+    table:hover {
+      background-color: #ccccff;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+    </tr>
+    <tr>
+      <td>Cell 3</td>
+      <td>Cell 4</td>
+    </tr>
+  </table>
+</body>
+</html>
+
+2: Apply different visibility by an element (visibility: hidden, visible, collapse) and use different types of display for an element (display: none, inline, block, contents, list-item)
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visibility and Display</title>
+  <style>
+    .hidden {
+      visibility: hidden;
+    }
+    
+    .visible {
+      visibility: visible;
+    }
+    
+    .collapse {
+      visibility: collapse;
+    }
+    
+    .none {
+      display: none;
+    }
+    
+    .inline {
+      display: inline;
+    }
+    
+    .block {
+      display: block;
+    }
+    
+    .contents {
+      display: contents;
+    }
+    
+    .list-item {
+      display: list-item;
+    }
+  </style>
+</head>
+<body>
+  <p class="hidden">This paragraph is hidden</p>
+  <p class="visible">This paragraph is visible</p>
+  <p class="collapse">This paragraph is collapsed</p>
+  <p class="none">This paragraph is not displayed</p>
+  <p class="inline">This paragraph is displayed inline</p>
+  <p class="block">This paragraph is displayed as a block</p>
+  <p class="contents">This paragraph is displayed as contents</p>
+  <p class="list-item">This paragraph is displayed as a list item</p>
+</body>
+</html>
+
+3: A long page which should have two links "click to go to bottom of page" and "click to go to top of page" . Also set their scroll-behavior to scroll smoothly
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scrolling Page</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Long page content here -->
+  <a href="#bottom">Click to go to bottom of page</a>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <a id="bottom" href="#top">Click to go to top of page</a>
+</body>
+</html>
+
+4: Add padding and margin with different size and understand the difference between them
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Padding and Margin</title>
+  <style>
+    .box {
+      background-color: #ff0000;
+      padding: 20px; /* adds 20px of padding inside the box */
+      margin: 30px; /* adds 30px of margin outside the box */
+    }
+    
+    .box2 {
+      background-color: #00ff00;
+      padding: 10px 20px 30px 40px; /* adds different padding on each side */
+      margin: 10px 20px 30px 40px; /* adds different margin on each side */
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <!-- Box content here -->
+  </div>
+  <div class="box2">
+    <!-- Box 2 content here -->
+  </div>
+</body>
+</html>
+
+5: A page with multiple background images for an webpage or element and define their adjustable sizes
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Background Images</title>
+  <style>
+    body {
+      background-image: url('image1.jpg'), url('image2.jpg'), url('image3.jpg');
+      background-size: 100% 100%, 50% 50%, 20% 20%;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <!-- Page content here -->
+</body>
+</html>
